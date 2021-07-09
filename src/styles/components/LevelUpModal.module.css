@@ -1,0 +1,55 @@
+
+.overlay {
+    background: rgba(242,243,245, 0.8);
+    position: fixed;
+    /* //ocupar a tela toda com os zeros */
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* fazer com que elementos da div dentro da div overlay fiquem centralizados */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0,0,0, 0.005);
+    text-align: center;
+    /* para colocar position 'absolute' no botão,que esta dentro desta div */
+    position: relative;
+}
+
+.container header {
+    font-size: 8.75rem;
+    font-weight: 600;
+    color: var(--blue);
+    background: url('/icons/levelup.svg') no-repeat center;
+    background-size: contain;
+}
+
+.container strong{
+    font-size: 2.25rem;
+    color: var(--title);
+}
+
+.container p{
+    font-size: 1.25rem;
+    color: var(--text);
+    margin-top: 0.25rem;
+}
+
+.container button {
+    position: absolute;
+    right: 0.5rem;
+    top:0.5rem;
+    /* pra tirar os estilos padroes do botão, usar transparent ou none */
+    background: transparent;
+    border: 0;
+    font-size: 0;
+}
